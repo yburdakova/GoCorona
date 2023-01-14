@@ -277,8 +277,6 @@ body {
   font-weight: 400;
   line-height: 126%;
   letter-spacing: 0.08em;
-  -webkit-font-feature-settings: "pnum" on, "lnum" on;
-          font-feature-settings: "pnum" on, "lnum" on;
   color: #B0B0B0;
 }
 .face__video-box_action {
@@ -288,10 +286,9 @@ body {
   line-height: 126%;
   letter-spacing: 0.165em;
   text-transform: uppercase;
-  -webkit-font-feature-settings: "pnum" on, "lnum" on;
-          font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
+
 .text-block__title {
   font-family: "Rubik";
   font-style: normal;
@@ -300,17 +297,17 @@ body {
   line-height: 126%;
   color: #000000;
 }
-.text-block .blue span {
-  color: #4285F4;
-}
-.text-block .red span {
-  color: #EC5863;
-}
 .text-block__text {
   margin-top: 12px;
   margin-bottom: 24px;
   font-weight: 400;
   line-height: 138.5%;
+}
+.text-block .blue span {
+  color: #4285F4;
+}
+.text-block .red span {
+  color: #EC5863;
 }
 
 .safe {
@@ -426,6 +423,10 @@ body {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+          box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .stat-experts {
@@ -522,6 +523,144 @@ body {
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
+}
+
+.bottom {
+  margin: 75px 0px;
+}
+.bottom__text-block {
+  text-align: center;
+  max-width: 800px;
+}
+.bottom__options {
+  margin-top: 50px;
+  position: relative;
+}
+.bottom__options-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.bottom__options-decor1 {
+  bottom: -20px;
+  left: 10px;
+  position: absolute;
+  background-color: #EC5863;
+  border-radius: 16px;
+  width: 65px;
+  height: 65px;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+.bottom__options-decor2 {
+  top: 30px;
+  left: 25%;
+  position: absolute;
+  background-color: #EC5863;
+  border-radius: 30px;
+  width: 97px;
+  height: 97px;
+  -webkit-transform: rotate(105deg);
+      -ms-transform: rotate(105deg);
+          transform: rotate(105deg);
+}
+.bottom__options-decor3 {
+  bottom: -15px;
+  left: 60%;
+  position: absolute;
+  background-color: #EC5863;
+  border-radius: 30px;
+  width: 127px;
+  height: 127px;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+.bottom__options-decor4 {
+  top: -25px;
+  right: 15px;
+  position: absolute;
+  background-color: #EC5863;
+  border-radius: 16px;
+  width: 66px;
+  height: 66px;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.block-text_center {
+  margin: 0 auto;
+}
+
+.options-item {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+          box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+  z-index: 5;
+}
+.options-item__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 35px 0 60px 0;
+}
+.options-item__icon img {
+  width: 72px;
+}
+.options-item__subtitle {
+  font-weight: 700;
+  line-height: 138.5%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #000000;
+  margin: 5px;
+}
+.options-item__text {
+  font-weight: 400;
+  line-height: 138.5%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #616161;
+  margin: 5px 10px 35px 10px;
+}
+
+.footer {
+  margin: 60px 0;
+}
+.footer__buttons-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__buttons-box a {
+  margin: 0 57px;
 }
 
 [class*=__container] {
